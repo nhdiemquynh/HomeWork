@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Bài 8</title>
+    <style>
+        *{box-sizing: border-box;}
+        body{
+            padding: 15px;
+            margin: 15px;
+            /* border: 1px solid black; */
+            background-color: black;
+            color: white;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .container{
+            display: flex;
+            justify-content: left;
+            align-content: space-evenly;
+        }
+
+        .container > * {
+            flex-basis: 100%;
+        }
+
+        .bottom-content{
+            display: flex;
+            justify-content: left;
+            column-gap: 10px;
+        }
+
+        .col-1 h3{
+            background-color: rgb(182, 154, 218);
+            width: 200px;
+            height: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="col-1">
+        <h3>190 x 50</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex nam sunt, eius ea quibusdam facere ab porro sint velit minima ad eveniet mollitia ut iste amet soluta, ducimus cupiditate expedita?</p>
+    </div>
+    <div class="col-2">
+        <h3>Information Link</h3>
+        <p>Home</p>
+        <p>Blog</p>
+        <p>Pricing</p>
+        <p>About</p>
+        <p>FAQ</p>
+        <p>Contact</p>
+    </div>
+    <div class="col-3">
+        <h3>Contact Details</h3>
+        <p>info@yoursite.com</p>
+        <p>wwww.yoursite.com</p>
+        <p>123 Nguyen Van B, TP. HCM, Vietnam</p>
+        <p>+61 3 8376 6284</p>
+    </div>
+    <div class="col-4">
+        <div class="top-content"><h3>Social</h3></div>
+        <div class="bottom-content">
+            <div class="left">
+                <div name="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+                <div name="git"><i class="fa fa-github" aria-hidden="true"></i></div>
+                <div name="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></div>
+                <div name="snapchat"><i class="fa fa-snapchat" aria-hidden="true"></i></div>
+                <div name="pinterest"><i class="fa fa-pinterest" aria-hidden="true"></i></div>
+            </div>
+            <div class="right">
+                <div name="facebook">22.543 Likes</div>
+                <div name="git">128 Projects</div>
+                <div name="twitter">12.860 Followers</div>
+                <div name="snapchat">3312 Shots</div>
+                <div name="pinterest">3331 Pins</div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

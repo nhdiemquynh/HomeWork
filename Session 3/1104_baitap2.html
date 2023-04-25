@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market Research Survey</title>
+</head>
+
+<body style="margin-left: 30px;">
+    <h2>Market Research Survey</h2>
+    <h4>Please take a few moments to complete this satisfaction survey.</h4>
+    <hr>
+    <!-- Form -->
+    <form action="">
+    <div>
+        <label for="age"><b>What is your age range?</b>
+            <br>
+            <select style="width: 200px;" name="" id="">
+                <option value="0-17">0-17</option>
+                <option value="18-24">18-24</option>
+                <option value="24-30">24-30</option>
+                <option value="30-40">30-40</option>
+                <option value="40-50">40-50</option>
+                <option value="50+">50+</option>
+            </select>
+        </label>
+    </div>
+
+    <br>
+
+    <div>
+        <label for="income"><b>What is your yearly income range?</b>
+            <br>
+            <select style="width: 200px;" name="" id="">
+                <option value="$0 - $25,000">$0 - $25,000</option>
+                <option value="$26,000 - $50,000">$26,000 - $50,000</option>
+                <option value="$50,000 - $100,000">$50,000 - $100,000</option>
+                <option value="More than $100,000">More than $100,000</option>
+            </select>            
+        </label>
+    </div>
+
+    <br>
+    
+    <div>
+        <label for="gender"><b>Gender Identity</b></label>
+    <br>
+        <table>
+            <tbody>
+                <tr>
+                    <td><input name="gender" type="radio"></td>
+                    <td>Male</td>
+                </tr>
+                <tr>
+                    <td><input name="gender" type="radio"></td>
+                    <td>Female</td>
+                </tr>
+                <tr>
+                    <td><input name="gender" type="radio"></td>
+                    <td>Nonbinary</td>
+                </tr>
+                <tr>
+                    <td><input name="gender" type="radio"></td>
+                    <td>Other</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="text"></td>
+                </tr>
+            </tbody>
+        </table> 
+    </div>
+    <br>
+
+    <div>
+    <label for="product"><b>Which of the following products have your purchased in the last 2 month. Please check all that apply.</b></label>
+        <br>
+            <input name="product" type="checkbox">
+            <label for="gender">Product 1</label>
+            <br>
+            <input name="product" type="checkbox">
+            <label for="gender">Product 2</label>
+            <br>
+            <input name="product" type="checkbox">
+            <label for="gender">Product 3</label>
+    </div>
+
+    <br>
+    
+    <div>
+    <label for="frequency"><b>How often would you use our new product?</b></label>
+        <br>
+            <input name="frequency" type="radio">
+            <label for="frequency">Daily</label>
+            <br>
+            <input name="frequency" type="radio">
+            <label for="frequency">Weekly</label>
+            <br>
+            <input name="frequency" type="radio">
+            <label for="frequency">Monthly</label>
+    </div>
+
+    <br>
+    
+    <label for="price"><b>What would you pay for the new product?</b></label>
+    <table>
+        <tbody>
+            <tr>
+                <td>$</td>
+                <td><input type="text" size="8" required></td>
+                <td>-</td>
+                <td><input type="text" size="1"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Dollars</td>
+                <td></td>
+                <td>Cents</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+    
+    <label for=""><b>What features would you like to see in the new products.</b></label>
+    <br>
+    <textarea name="" id="" cols="139" rows="10"></textarea>
+    <br>
+
+    <!-- Bang danh gia diem -->
+    <p><b> Please rate your level of agreement with the following statements.</b></p>
+    <table border="1" style="border-collapse:collapse;">
+        <thead>
+            <tr style="background-color: lightgray;">
+                <th></th>
+                <th style="width: 150px;">Strongly Disagree</th>
+                <th style="width: 150px;">Disagree</th>
+                <th style="width: 150px;">Agree</th>
+                <th style="width: 150px;">Strongly Agree</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td style="text-indent: 5px; width: 430px;"><b>Our products are priced fairly.</b></td>
+                <td align="center"><input type="radio" name="evaluate"><br>1</td>
+                <td align="center"><input type="radio" name="evaluate"><br>2</td>
+                <td align="center"><input type="radio" name="evaluate"><br>3</td>
+                <td align="center"><input type="radio" name="evaluate"><br>4</td>
+            </tr>
+            
+            <tr>
+                <td style="text-indent: 5px;"><b>Our products are high quality.</b></td>
+                <td align="center"><input type="radio" name="evaluate"><br>1</td>
+                <td align="center"><input type="radio" name="evaluate"><br>2</td>
+                <td align="center"><input type="radio" name="evaluate"><br>3</td>
+                <td align="center"><input type="radio" name="evaluate"><br>4</td>
+            </tr>           
+
+            <tr>
+                <td style="text-indent: 5px;"><b>You would recommend our product to a friend or coworker.</b></td>
+                <td align="center"><input type="radio" name="evaluate"><br>1</td>
+                <td align="center"><input type="radio" name="evaluate"><br>2</td>
+                <td align="center"><input type="radio" name="evaluate"><br>3</td>
+                <td align="center"><input type="radio" name="evaluate"><br>4</td>
+            </tr>
+
+        </tbody>
+    </table>
+
+    <br>
+
+    <button style="width: 100px; height: 30px;" type="submit">Submit</button>
+    </form>
+
+</body>
+</html>

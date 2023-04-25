@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 2</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body{
+            padding: 15px 15px;
+            margin: 15px;
+            /* border: 1px solid black; */
+            font-family: Georgia, 'Times New Roman', Times, serif ;
+            font-size: 20px;
+        }
+        *{
+            box-sizing: border-box;
+            font-family: Georgia, 'Times New Roman', Times, serif ;
+        }
+        .row{
+            display: flex;
+            column-gap: 50px;
+        }
+        /* hr{
+            width: 120px;
+            border: 3px solid orange;
+            float: left;
+        }
+
+        hr::after{
+            content: '';
+            display: block;
+            clear: both;
+        } */
+        .info{
+            color: gray;
+        }
+        i{
+            margin-right: 30px;
+        }
+        form{
+            color: gray;
+        }
+        .form-input{
+            width: 750px;
+            height: 40px;
+            margin-bottom: 10px;
+            font-size: 20px;
+            text-indent: 10px;
+        }
+        .form-input-textarea{
+            width: 750px;
+            margin-bottom: 10px;
+            font-size: 20px;
+            text-indent: 10px;
+        }
+        button{
+            background-color: rgb(47, 145, 112);
+            color: white;
+            padding: 15px 40px;
+            font-size: 20px;
+            border-color: rgb(47, 145, 112);
+        }
+        h2 {
+        border-bottom: 1px solid black;
+        padding-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <div class="title">
+        <h2>CONTACT US</h2>
+        <!-- <hr> -->
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="left-content">
+                <div><h3>Contact Info</h3></div>
+                <div class="info">
+                    <p><i class="fa fa-map-marker" aria-hidden="true"></i>321 Awesome Street New York, NY 17022</p>
+                    <p><i class="fa fa-envelope-o" aria-hidden="true"></i> info@companyname.com</p>
+                    <p><i class="fa fa-phone" aria-hidden="true"></i> +1 800 123 1234</p>
+                </div>
+            </div>
+            <div class="right-content">
+                <div><h3>Having Any Query! Or Book an appointment</h3></div>
+                <div class="form">
+                    <form action="">
+                        <input class="form-input" type="name" placeholder="Your Name"><br>
+                        <input class="form-input" type="email" placeholder="Your Email"><br>
+                        <input class="form-input" type="subject" placeholder="Subject"><br>
+                        <textarea class="form-input-textarea" name="message" id="" cols="30" rows="10" placeholder="Message"></textarea><br>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+</body>
+</html>

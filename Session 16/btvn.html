@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h2>Thêm sinh viên</h2>
+        <div>
+            <input type="text" id="txtName" placeholder="Tên sinh viên">
+            <input type="text" id="txtEmail" placeholder="Email">
+            <input type="text" id="txtPhone" placeholder="Số điện thoại">
+            <button id="btnAdd">Thêm</button>
+        </div>
+        <table border="1" width="100%">
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>Tên</th>
+                    <th>Email</th>
+                    <th>SĐT</th>
+                </tr>
+            </thead>
+            <tbody id="list"></tbody>
+        </table>
+    </div>
+
+    <script>
+        var txtName = document.getElementById('txtName');
+        var txtEmail = document.getElementById('txtEmail');
+        var txtPhone = document.getElementById('txtPhone');
+        var btnAdd = document.getElementById('btnAdd');
+        var list = document.getElementById('list');
+        var counter = 1;
+
+        var students = [];
+
+        btnAdd.addEventListener('click', function() {
+
+        var name = txtName.value.trim();
+        var email = txtEmail.value.trim();
+        var phone = txtPhone.value.trim();
+
+    // Kiểm tra nhập trùng thông tin email và số điện thoại
+        var isDuplicate = students.some(function(student) {
+            return student.email === email || student.phone === phone;
+        });
+
+        if (name && email && phone && !isDuplicate) {
+            students.push({
+                name: name,
+                email: email,
+                phone: phone
+            });
+
+            var newRow = document.createElement('tr');
+
+            newRow.innerHTML = '<td>' + counter + '</td>' +
+                '<td>' + name + '</td>' +
+                '<td>' + email + '</td>' +
+                '<td>' + phone + '</td>';
+
+            list.appendChild(newRow);
+
+            // Tăng biến đếm STT
+            counter++;
+
+            // Xóa nội dung trong các ô input
+            txtName.value = '';
+            txtEmail.value = '';
+            txtPhone.value = '';
+        }
+    });
+
+    </script>
+</body>
+</html>
